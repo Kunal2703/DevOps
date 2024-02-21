@@ -2,7 +2,9 @@
 echo "HELLO WORLD"
 echo "Enter number: "
 read n
-for ((i = 0; i <= $n; i++))
+i=0
+while [ "$i" -le "$n" ]
 do
-    echo $i
+    echo "$i"
+    i=$((i + 1))
 done
